@@ -1,0 +1,380 @@
+/*Cabeçalho*/
+header
+{   
+    margin-top: 2px;
+    margin-right: 5px; margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/*Alinha os elementos do corpo lado a lado*/
+main
+{
+    display: flex;
+}
+/*Botao menu e logo estao aqui*/ 
+div.btn_menu
+{
+    width: 15%;
+    min-width: 160px;
+}
+/*Logo no cabeçalho*/
+#logo
+{
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*Animação ao clicar*/
+button.btn_menu:active
+{
+    background-color: rgb(128, 128, 128, 0.3);
+}
+
+/*Removendo a animação ao focus estar no botao*/
+button.btn_menu:focus
+{
+    outline-width: 0;
+}
+
+/*Botao do menu*/
+button.btn_menu
+{
+    border: none;
+    border-radius: 20px;
+    background: none;
+    padding: 5px;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+img.btn_menu
+{
+    height: 28px;
+}
+/*Div que centraliza a barra de pesquisa no cabeçalho*/
+#centro
+{
+    width: 53%;
+    display: flex;
+}
+/*Pesquisa de vídeos*/
+div.pesquisa
+{
+    width: 100%; height: 40px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+    border-radius: 2px;
+}
+input.pesquisa
+{
+    width: 90%; height: 100%;
+    padding: 10px;
+    min-width: 85px;
+    border: none;
+    border-right: 1px solid rgb(128,128,128, 0.3);
+    font-style: italic;
+}
+input.pesquisa:focus
+{
+    border: 1px solid #0070c0;
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+button.pesquisa
+{
+    width: 10%; height: 100%;
+    min-width: 38px;
+    background-color: rgb(128,128,128, 0.05);
+    border: none;
+}
+button.pesquisa:focus
+{
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+button.pesquisa img
+{
+    height: 18px;
+}
+
+button.pesquisa:hover
+{
+    background-color: rgb(128,128,128, 0.15);
+}
+/*Botao microfone ao lado da pesquisa*/
+button.mic
+{
+    margin-left: 12px;
+    border: none;
+    min-width: 40px;
+    border-radius: 20px;
+    background-color: rgb(128,128,128, 0.05);
+    padding: 7px; padding-left: 9px; padding-right: 9px;
+}
+button.mic:focus
+{
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+button.mic img
+{
+    height: 23px;
+}
+
+/*Botão Apps e Opções*/
+button.apps, button.opcoes
+{
+    border: none;
+    border-radius: 20px;
+    min-width: 35px;
+    background: none;
+    padding: 2px;
+}
+button.apps, button.opcoes:focus
+{
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+
+button.apps
+{
+    margin-top: 5px;
+}
+button.apps img
+{
+    height: 35px;
+}
+button.opcoes img
+{
+    height: 15px;
+}
+/*Botão de login (cabeçalho e menu esquerda)*/
+button.login
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-right: 20px;
+    background: none;
+    border: 1px solid #0070c0;
+    border-radius: 2px;
+    height: 42px;
+}
+button.login:focus
+{
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+button.login img
+{
+    height: 25px;
+}
+text.login
+{
+    width: 70px;
+    color: #0087e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+/*Menu da esquerda*/
+div.menu
+{
+    width: 17%; height: 550px;
+    min-width: 170px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+/*Personalizando a barra de rolagem*/
+/* Largura */
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+/* Fundo */
+::-webkit-scrollbar-track 
+{
+    background: none;
+}
+
+/* Barra que navega */
+::-webkit-scrollbar-thumb 
+{
+    background: none; /*Fica invisivel */
+    border-radius: 20px;
+}
+
+/* Barra aparece somente ao passar o mouse */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(128,128,128);
+}
+
+/*Div itens são os itens do menu da esquerda*/
+div.itens, div.login
+{
+    border-bottom: 1px solid rgb(128,128,128, 0.3);
+    margin-bottom: 10px; margin-top: 10px;
+}
+div.itens button
+{
+    width: 100%; height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+div.itens button.selecionado
+{
+    background: rgb(128,128,128, 0.09);
+}
+div.itens button.selecionado:hover
+{
+    background: rgb(128,128,128, 0.3);
+}
+div.itens button:hover
+{
+    background: rgb(128,128,128, 0.09);
+}
+div.itens button:focus
+{
+    outline-width: 0; /*Remove o efeito padrão de quando selecionado*/
+}
+div.itens button img
+{
+    height: 20px;
+    margin-left: 20px;
+}
+div.itens button text
+{
+    margin-left: 22px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+div.itens button text.negrito
+{
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*Div dos botoes logins (cabeçalho e menu a esquerda)*/
+div.login
+{
+    padding-left: 25px; padding-right: 25px;
+    padding-top: 12px; padding-bottom: 15px;
+}
+/*Texto do campo login do menu a esquerda*/
+div.login p
+{
+    font-size: 14px;
+    font-style: italic;
+}
+/*Titulo de seção do menu a esquerda*/
+text.titulo
+{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(128,128,128);
+    padding-left: 22px;
+}
+/*Cabeçalho de sugestões (abaxo do cabeçalho principal)*/
+div.sugestoes
+{
+    width: 100%; height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px; padding-top: 10px; padding-left: 20px;
+    margin-top: 5px;
+    border-top: 1px solid rgb(128,128,128, 0.3);
+    border-bottom: 1px solid rgb(128,128,128, 0.3);
+}
+div.sugestoes text
+{
+    height: 35px;
+    min-width: 45px;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 5px; padding-right: 5px;
+    border-radius: 80px;
+    border: 1px solid rgb(128,128,128, 0.5);
+    background-color: rgb(128,128,128, 0.05);
+    cursor: pointer;
+}
+div.sugestoes text:hover
+{
+    background-color: rgb(128,128,128, 0.15);
+}
+div.sugestoes text.ativo
+{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+/*Div onde estão todos os videos*/
+div.videos
+{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(128,128,128,0.05);
+    overflow-y: scroll;
+}
+/*Linhas de videos*/
+div.row
+{
+    margin-bottom: 40px;
+}
+
+/*Div de cada video (Imagem, nome, canal, views...)*/
+div.video
+{
+    cursor: pointer;
+    padding: 10px;
+}
+div.video:hover
+{
+    background-color: rgb(128,128,128,0.08);
+}
+/*Imagem do video*/
+img.video
+{
+    width: 253px; height: 143px;
+}
+/*Infomações dentro da div.video*/
+div.infosVideo
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+div.infosVideo img
+{
+    height: 40px;
+    border-radius: 100px;
+}
+div.infosVideo text
+{
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(128,128,128);
+}
+div.infosVideo text.tituloVideo
+{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.viewsVideo
+{
+    margin: none;
+}

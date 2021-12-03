@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Indica que a norma padrão é UTF8-->
+        <meta charset="UTF-8"/>
+        
+        <!-- Icone na aba do navegador-->
+        <link rel="shortcut icon" type="image/x-icon" href="Resources/Imagens/icon.png"/>
+        <!-- Estilo em CSS do Bootstrap-->
+        <link rel="stylesheet" href="Resources/Libs/bootstrap-4/css/bootstrap.min.css"/> 
+        <!-- Estilo em CSS-->
+        <link rel="stylesheet" href="Estilo.css"/>
+
+        <!-- Titulo da aba no navegador-->
+        <title>YouTube</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Menu e Logo-->
+            <div class="btn_menu">
+                <button class="btn_menu"><img class="btn_menu" src="Resources/Imagens/menu.png"></button>
+                <img id="logo" src="Resources/Imagens/Logo.png">
+            </div>
+
+            <!-- Barra e botão de pesquisa-->
+            <div id="centro">
+            <div class="pesquisa">
+                <input class="pesquisa" type="text" placeholder="Search">
+                <button class="pesquisa"><img src="Resources/Imagens/buscar.png"></button>
+            </div>
+            <!-- Botão Microfone-->
+            <button class="mic"><img src="Resources/Imagens/mic.png"></button>
+            </div>
+
+            <!-- Botão Apps, Opções e login-->
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <button class="apps"><img src="Resources/Imagens/apps.png"></button>
+                <button class="opcoes"><img src="Resources/Imagens/opções.png"></button>
+
+                <button class="login">
+                    <img src="Resources/Imagens/login.png">
+                    <text class="login">SIGN IN</text>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Menu da esquerda-->
+            <div class="menu">
+                <!-- Conjunto de itens-->
+                <div class="itens">
+                    <!-- Home-->
+                    <div>
+                        <button class="selecionado">
+                        <img src="Resources/Imagens/home.png">
+                        <text class="negrito">Home</text>
+                        </button>
+                    </div>
+                    <!-- Explore-->
+                    <div>
+                        <button>
+                        <img src="Resources/Imagens/explore.png">
+                        <text>Explore</text>
+                        </button>
+                    </div>
+                    <!-- Subscriptions-->
+                    <div style="margin-bottom: 10px;">
+                        <button>
+                        <img src="Resources/Imagens/subs.png">
+                        <text>Subscriptions</text>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conjunto de itens-->
+                <div class="itens">
+                    <div>
+                        <!-- Library-->
+                        <button>
+                        <img src="Resources/Imagens/lib.png">
+                        <text>Library</text>
+                        </button>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <!-- History-->
+                        <button>
+                        <img src="Resources/Imagens/history.png">
+                        <text>History</text>
+                        </button>
+                    </div>                    
+                </div>
+
+                <!-- Conjunto de itens-->
+                <div class="login" style="padding-left: 30px;">
+                    <p>Sign in to like videos, comment, and subscribe.</p>
+                    <!-- Botão login-->
+                    <button class="login">
+                        <img src="Resources/Imagens/login.png">
+                        <text class="login">SIGN IN</text>
+                    </button>
+                </div>
+
+                <!-- Conjunto de Categorias-->
+                <div class="itens" style="margin-top: 10px;">
+                    <!-- Best Of Youtube-->
+                    <text class="titulo">BEST OF YOUTUBE</text>
+
+                    <!-- Music-->
+                    <button style="margin-top: 8px;">
+                    <img src="Resources/Imagens/music.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Music</text>
+                    </button>
+
+                    <!-- Sports-->
+                    <button>
+                    <img src="Resources/Imagens/sports.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Sports</text>
+                    </button>
+
+                    <!-- Gaming-->
+                    <button>
+                    <img src="Resources/Imagens/gaming.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Gaming</text>
+                    </button>
+
+                    <!-- Movies-->
+                    <button>
+                    <img src="Resources/Imagens/movies.png" style="height: 23px; border-radius: 50px;">
+                    <text>Movies</text>
+                    </button>
+                
+                    <!-- News-->
+                    <button>
+                    <img src="Resources/Imagens/news.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>News</text>
+                    </button>
+
+                    <!-- Live-->
+                    <button>
+                    <img src="Resources/Imagens/live black.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Live</text>
+                    </button>
+
+                    <!-- Learning-->
+                    <button>
+                    <img src="Resources/Imagens/learning.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Learning</text>
+                    </button>
+
+                    <!-- Spotlight-->
+                    <button>
+                    <img src="Resources/Imagens/spotlight.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>Spotlight</text>
+                    </button>
+                
+                    <!-- 360 Video-->
+                    <button style="margin-bottom: 10px;">
+                    <img src="Resources/Imagens/360video.jpg" style="height: 23px; border-radius: 50px;">
+                    <text>360º Video</text>
+                    </button>
+                </div>
+
+                <!-- Seção de 1 item só-->
+                <div class="itens" style="margin-top: 10px;">
+                    <!-- Browse Channels-->
+                    <button style="margin-bottom: 10px;">
+                    <img src="Resources/Imagens/browse_channels.png" style="height: 23px;">
+                    <text>Browse Channels</text>
+                    </button>
+                </div>
+
+                <!-- Conjunto de Itens-->
+                <div class="itens" style="margin-top: 10px;">
+                    <!-- More From Youtube-->
+                    <text class="titulo">MORE FROM YOUTUBE</text>
+
+                    <!-- YouTube Premium-->
+                    <button style="margin-top: 10px;">
+                    <img src="Resources/Imagens/premium.png">
+                    <text>YouTube Premium</text>
+                    </button>
+
+                    <!-- Live-->
+                    <button style="margin-bottom: 10px;">
+                    <img src="Resources/Imagens/Live white.png">
+                    <text>Live</text>
+                    </button>
+                </div>
+
+                <!-- Conjunto de Itens-->
+                <div class="itens" style="margin-top: 10px;">
+                    <!-- Settings-->
+                    <button>
+                    <img src="Resources/Imagens/settings.png">
+                    <text>Settings</text>
+                    </button>
+
+                    <!-- Report History-->
+                    <button>
+                    <img src="Resources/Imagens/report.png">
+                    <text>Report history</text>
+                    </button>
+
+                    <!-- Help-->
+                    <button>
+                    <img src="Resources/Imagens/help.png">
+                    <text>Help</text>
+                    </button>
+
+                    <!-- Send feedback-->
+                    <button style="margin-bottom: 10px;">
+                    <img src="Resources/Imagens/feedback.png">
+                    <text>Send feedback</text>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="sugestoes">
+                    <text class="ativo">All</text>
+                    <text>Jovem Tech</text>
+                    <text>Podcast</text>
+                    <text>Programming</text>
+                    <text>Video Games</text>
+                    <text>Python</text>
+                    <text>Front End</text>
+                    <text>Elon Musk</text>
+                    <text>Super-heros</text>
+                    <text>Computer Science</text>
+                    <text>Fisic</text>
+                    <text>Games</text>
+                </div>
+
+                <!-- Videos do tipo container-fluid (bootstrap)-->
+                <div class="videos container-fluid">
+
+                    <!-- Linha do container (bootstrap)-->
+                    <div class="row">
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/FA - Trailer.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/JovemTech.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Trailer | FlorestAdventures</text>
+                                    <br/>
+                                    <text>Jovem Tech</text>
+                                    <br/>
+                                    <text class="viewsVideo">8.6M views • 9 month ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/Julia.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Siqueira.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Festa de 15 anos da Julia</text>
+                                    <br/>
+                                    <text>Siqueira Fotos e Filmagens</text>
+                                    <br/>
+                                    <text class="viewsVideo">5K views • 1 year ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/computador quantico.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Ciencia todo dia.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Como Fazer um COMPUTA...</text>
+                                    <br/>
+                                    <text>Ciência Todo Dia</text>
+                                    <br/>
+                                    <text class="viewsVideo">142K views • 3 days ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/teoria big bang.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Canal nostalgia.jpg">
+                                <div>             
+                                    <text class="tituloVideo">A origem do universo | Teo...</text>
+                                    <br/>
+                                    <text>Jovem Tech</text>
+                                    <br/>
+                                    <text class="viewsVideo">5.7M views • 3 years ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Linha 2 do container (bootstrap)-->
+                    <div class="row">
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/HORIZON.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Playstation.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Horizon Forbidden West</text>
+                                    <br/>
+                                    <text>PlayStation</text>
+                                    <br/>
+                                    <text class="viewsVideo">8.5M views • 5 month ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/como implantar memorias.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Ponto em comum.jpg">
+                                <div>             
+                                    <text class="tituloVideo">como IMPLANTAR MEMÓ...</text>
+                                    <br/>
+                                    <text>Ponto em Comum</text>
+                                    <br/>
+                                    <text class="viewsVideo">481K views • 2 years ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/FA - Camaleao.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/JovemTech.jpg">
+                                <div>             
+                                    <text class="tituloVideo">CAMALEÃO: O Novo Perso...</text>
+                                    <br/>
+                                    <text>Jovem Tech</text>
+                                    <br/>
+                                    <text class="viewsVideo">12.5M views • 6 month ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/python.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/freeCode.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Advanced Computer Vision...</text>
+                                    <br/>
+                                    <text>freeCodeCamp.org</text>
+                                    <br/>
+                                    <text class="viewsVideo">631K views • 6 month ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Linha 3 do container (bootstrap)-->
+                    <div class="row">
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/via lactea.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Voce sabia.jpg">
+                                <div>             
+                                    <text class="tituloVideo">Viajando pela VIA LÁCTEA...</text>
+                                    <br/>
+                                    <text>Você Sabia?</text>
+                                    <br/>
+                                    <text class="viewsVideo">3.4M views • 2 years ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/E SE A TERRA.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Ciencia todo dia.jpg">
+                                <div>             
+                                    <text class="tituloVideo">E Se a Terra Parasse de Girar?</text>
+                                    <br/>
+                                    <text>Ciência Todo Dia</text>
+                                    <br/>
+                                    <text class="viewsVideo">1.5M views • 3 years ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/como papagaios.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Ponto em comum.jpg">
+                                <div>             
+                                    <text class="tituloVideo">como PAPAGAIOS FALAM...</text>
+                                    <br/>
+                                    <text>Ponto em Comum</text>
+                                    <br/>
+                                    <text class="viewsVideo">1.7M views • 1 year ago</text>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video individual | Coluna da linha (bootstrap) / definido os tres possiveis tamanhos da coluna-->
+                        <div class="video col-sm-12 col-md-4 col-lg-3">
+                            <!-- Imagem do video-->
+                            <img class="video" src="Resources/Imagens/Videos/uncharted.webp">
+                            <br/>
+                            <!-- Informações do video-->
+                            <div class="infosVideo">     
+                                <img src="Resources/Imagens/Playstation.jpg">
+                                <div>             
+                                    <text class="tituloVideo">UNCHARTED 4: A Thief's End</text>
+                                    <br/>
+                                    <text>PlayStation</text>
+                                    <br/>
+                                    <text class="viewsVideo">12M views • 5 years ago</text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
